@@ -3,14 +3,14 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 let sampleData = [{
-    date: 2017-12-20,
-    type: "robbery"
+    "month": "January",
+    "neighborhood": "Highlands"
 }, {
-    date: 2017-11-20,
-    type: "assault"
+    "month": "February",
+    "neighborhood": "Rino"
 }, {
-    date: 2017-10-20,
-    type: "murder"
+    "month": "March",
+    "neighborhood": "Cap Hill"
 }];
 
 const app = express();
