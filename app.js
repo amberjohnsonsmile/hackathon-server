@@ -4,15 +4,24 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
-let sampleData = [{
-    "month": "January",
-    "neighborhood": "Highlands"
+let data = [{
+    "month": "november",
+    "crime": "criminal-trespassing",
+    "date": "11/14/12",
+    "lat": 39.738475,
+    "lon": -105.0287401
 }, {
-    "month": "February",
-    "neighborhood": "Rino"
+    "month": "november",
+    "crime": "criminal-trespassing",
+    "date": "11/14/12",
+    "lat": 39.738475,
+    "lon": -105.0287401
 }, {
-    "month": "March",
-    "neighborhood": "Cap Hill"
+    "month": "november",
+    "crime": "criminal-trespassing",
+    "date": "11/14/12",
+    "lat": 39.738475,
+    "lon": -105.0287401
 }];
 
 const app = express();
@@ -20,12 +29,12 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", function(request, response) {
-    response.json({sampleData});
+    response.json({data});
 });
 
 app.post("/", function(request, response) {
     response.send({
-        message: "Request received",
+        message: "HooooOOOOOOOOOoooooowl",
         body: request.body
     });
 });
