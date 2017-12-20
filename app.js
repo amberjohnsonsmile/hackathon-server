@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const crimeData = require("./parsedcrime.json");
+//const crimeData = require("./parsedcrime.json");
 
 let data = [{
     "month": "november",
