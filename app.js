@@ -28,7 +28,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", function(request, response) {
-    response.json({crimeData});
+    response.json({data: crimeData});
 });
 
 app.post("/", function(request, response) {
