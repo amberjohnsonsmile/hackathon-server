@@ -1,8 +1,7 @@
-// server code
-
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const crimeData = require("./parsedcrime.json");
 
 let data = [{
     "month": "november",
@@ -29,7 +28,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", function(request, response) {
-    response.json({data});
+    response.json({crimeData});
 });
 
 app.post("/", function(request, response) {
